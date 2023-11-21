@@ -1,7 +1,12 @@
-function skillMembers() {
-    var members = ['egoing', 'k8805', 'hoya'];
-    for (var i = 0; i < members.length; i++) {
-        console.log('array loop', members[i]);
+function skillMember() {
+    var member = document.getElementById('member');
+    var memberValue = member.value;
+    var memberLength = memberValue.length;
+    var memberMsg = document.getElementById('memberMsg');
+    if (memberLength < 1) {
+        memberMsg.innerHTML = '請輸入會員帳號';
+        memberMsg.style.color = 'red';
+    } else {
+        memberMsg.innerHTML = '';
     }
-    return members;
 }
