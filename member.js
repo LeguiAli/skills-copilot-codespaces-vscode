@@ -1,4 +1,4 @@
-function skillMember() {
+function skillsMember() {
     var member = document.getElementById('member');
     var memberValue = member.value;
     var memberLength = memberValue.length;
